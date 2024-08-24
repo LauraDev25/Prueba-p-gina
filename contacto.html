@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="logo">
+            <a href="#" class="logo"></a><img src="IMAGENES/LOGO.jpeg" alt="">
+        </div>
+
+        <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+    <main>
+      <h1>Comunicate con nosotros</h1>
+      <br>
+        <form id="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone">Celular:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="comments">Comentarios:</label>
+            <textarea id="comments" name="comments" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="confirmation-message" style="display: none;">Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.</p>
+    </main>
+
+    <br><br><br><br><br><br>
+    <footer class="footer container">
+      <div class="footer-txt">
+        <img src="IMAGENES/LOGO.jpeg" alt="">
+      </div>
+      <div class="ubicacion-txt">
+        <h1>Ubicaciòn</h1>
+        <br>
+        <h3>Nobsa Boyacà</h3>
+        <br>
+        <p>Calle 8 # 4-48 centro</p>
+        <br>
+        <h3>Nueva sede</h3>
+        <br>
+        <p>Sogamoso Boyacà</p>
+        <br>
+        <p>Calle 9 # 6-58 centro</p>
+      </div>
+      <div class="contactanos-txt">
+        <h1>Contactanos</h1>
+        <br>
+        <h3>Email</h3>
+        <p>tienda@venussaccesorios.com</p>
+        <br>
+        <h3>Telefono</h3>
+        <p>+57 3124567893</p>
+      </div>
+      <div class="redes-txt">
+        <h1>Nuestras Redes Sociales</h1>
+        <br>
+        <h3>Instagram</h3>
+        <p>Venuss_Accesorios</p>
+        <br>
+        <h3>Facebook</h3>
+        <p>Venuss_Accesorios</p>
+      </div>
+    
+      <br><br><br><br>
+    
+    
+    </footer>
+
+    <script src="contacto.js"></script>
+</body>
+</html>

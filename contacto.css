@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+main {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 5px 0;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+.logo img {
+  font-size: 80px;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 60px;
+  margin-left: -80px;
+}
+
+.logo {
+  margin-left: -60px;
+}
+ul li {
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-left: -10px;
+}
+
+a {
+  color: palevioletred;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+}
+
+.fas fa-search {
+  font-size: 16px;
+}
+
+#menu, li {
+  margin-top: 35px;
+  text-align: center;
+  margin-left: -40px;
+}
+
+
+.footer {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+  justify-content: space-around; /* Distribuye el espacio entre los elementos */
+  padding: 20px;
+  background-color: #f8f9fa; /* Color de fondo opcional */
+}
+
+.footer-txt, .ubicacion-txt, .contactanos-txt, .redes-txt {
+  flex: 1; /* Permite que cada sección crezca para llenar el espacio disponible */
+  padding: 10px;
+  min-width: 200px; /* Asegura que las columnas no se reduzcan demasiado */
+}
+
+/* Estilo para las imágenes en el footer */
+.footer img {
+  max-width: 70%; /* Ajusta el tamaño de la imagen para que no se desborde del contenedor */
+  height: auto;
+}
+
+/* Estilos para los encabezados */
+.footer h1, .footer h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el contenido de texto */
+.footer p {
+  margin: 5px 0;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Coloca los elementos en una columna en pantallas más pequeñas */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+
+  .footer-txt, .ubicacion-txt, .contactanos-txt, .redes-txt {
+    text-align: center; /* Centra el texto en pantallas más pequeñas */
+    margin-bottom: 20px; /* Añade espacio entre las secciones */
+  }
+}

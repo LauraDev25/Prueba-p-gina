@@ -1,0 +1,364 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+.logo img {
+  font-size: 80px;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 100px;
+  margin-left: -900px;
+}
+
+.logo {
+  margin-left: -60px;
+}
+ul li {
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 20px;
+  margin-top: px;
+  margin-left: -10px;
+}
+
+a {
+  color: palevioletred;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+}
+
+.fas fa-search {
+  font-size: 16px;
+}
+
+#menu, li {
+  margin-top: -170px;
+  text-align: center;
+  margin-left: 180px;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #ffffff;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 1180px ;
+  margin-top: -52px;
+}
+
+.cart-icon #cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  margin-right: 103px;
+  margin-top: -3px;
+}
+
+.cart-popup {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  width: 300px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  padding: 15px;
+  display: none;
+  z-index: 1000;
+}
+
+.cart-popup h2 {
+  margin: 0;
+}
+
+.cart-popup ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-popup .cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-popup .total {
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .cart-popup {
+      width: 90%;
+      right: 5%;
+  }
+
+  .cart-icon {
+      font-size: 20px;
+  }
+}
+
+
+
+
+  .Imagenes {
+    padding: 20px;
+  }
+
+.swiper-wrapper {
+    display: flex;
+    overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+    gap: 20px; /* Espacio entre los elementos */
+    margin-top: -50px
+}
+
+.Productos {
+    flex: 1 0 auto; /* Permite que los elementos se ajusten en una fila y tengan un tamaño automático */
+    max-width: 420px; /* Ajusta el ancho máximo de cada bloque */
+    box-sizing: border-box; /* Incluye el padding y border en el ancho y alto del elemento */
+    text-align: center; /* Centra el texto dentro del bloque */
+}
+
+.Productos img {
+    width: 90%; /* Ajusta la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Opcional: agrega bordes redondeados a las imágenes */
+}
+
+.Prodctos-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black; /* Color del texto, puedes ajustarlo */
+  text-align: center; /* Opcional, para centrar el texto */
+  padding: 10px; /* Opcional, agrega un poco de espacio alrededor del texto */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+  border-radius: 8px; /* Opcional, para bordes redondeados */
+}
+
+.Prodctos-txt h1 {
+  font-size: 2em; /* Tamaño del título, ajusta según prefieras */
+    margin-bottom: 10px;
+
+}
+
+
+.Imagenes2 {
+  padding: 20px;
+}
+
+.swiper-wrapper2 {
+  display: flex;
+  overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+  gap: 20px; /* Espacio entre los elementos */
+  margin-top: -50px
+}
+
+.Productos2 {
+  flex: 1 0 auto; /* Permite que los elementos se ajusten en una fila y tengan un tamaño automático */
+  max-width: 420px; /* Ajusta el ancho máximo de cada bloque */
+  box-sizing: border-box; /* Incluye el padding y border en el ancho y alto del elemento */
+  text-align: center; /* Centra el texto dentro del bloque */
+}
+
+.Productos2 img {
+  width: 90%; /* Ajusta la imagen al ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px; /* Opcional: agrega bordes redondeados a las imágenes */
+}
+
+.Prodctos2-txt {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: black; /* Color del texto, puedes ajustarlo */
+text-align: center; /* Opcional, para centrar el texto */
+padding: 10px; /* Opcional, agrega un poco de espacio alrededor del texto */
+background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+border-radius: 8px; /* Opcional, para bordes redondeados */
+}
+
+.Prodctos2-txt h1 {
+font-size: 2em; /* Tamaño del título, ajusta según prefieras */
+  margin-bottom: 10px;
+
+}
+
+
+.Imagenes3 {
+  padding: 20px;
+}
+
+.swiper-wrapper3 {
+  display: flex;
+  overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+  gap: 20px; /* Espacio entre los elementos */
+  margin-top: -50px
+}
+
+.Productos3 {
+  flex: 1 0 auto; /* Permite que los elementos se ajusten en una fila y tengan un tamaño automático */
+  max-width: 420px; /* Ajusta el ancho máximo de cada bloque */
+  box-sizing: border-box; /* Incluye el padding y border en el ancho y alto del elemento */
+  text-align: center; /* Centra el texto dentro del bloque */
+}
+
+.Productos3 img {
+  width: 90%; /* Ajusta la imagen al ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px; /* Opcional: agrega bordes redondeados a las imágenes */
+}
+
+.Prodctos3-txt {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: black; /* Color del texto, puedes ajustarlo */
+text-align: center; /* Opcional, para centrar el texto */
+padding: 10px; /* Opcional, agrega un poco de espacio alrededor del texto */
+background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+border-radius: 8px; /* Opcional, para bordes redondeados */
+}
+
+.Prodctos3-txt h1 {
+font-size: 2em; /* Tamaño del título, ajusta según prefieras */
+  margin-bottom: 10px;
+
+}
+
+.ropa {
+  text-align: center;
+  background-image:url(https://i.pinimg.com/564x/36/a8/ad/36a8ad77bdaad6119e4bcac9fea2c9ea.jpg);
+  margin-top: 20px;
+  
+}
+
+
+.proximamente {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.zapatos {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.moda {
+  font-size: 20px;
+  margin-top: 8px;
+  margin-bottom: 50px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+  justify-content: space-around; /* Distribuye el espacio entre los elementos */
+  padding: 20px;
+  background-color: #f8f9fa; /* Color de fondo opcional */
+}
+
+.footer-txt, .ubicacion-txt, .contactanos-txt, .redes-txt {
+  flex: 1; /* Permite que cada sección crezca para llenar el espacio disponible */
+  padding: 10px;
+  min-width: 200px; /* Asegura que las columnas no se reduzcan demasiado */
+}
+
+/* Estilo para las imágenes en el footer */
+.footer img {
+  max-width: 70%; /* Ajusta el tamaño de la imagen para que no se desborde del contenedor */
+  height: auto;
+}
+
+/* Estilos para los encabezados */
+.footer h1, .footer h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el contenido de texto */
+.footer p {
+  margin: 5px 0;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Coloca los elementos en una columna en pantallas más pequeñas */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+
+  .footer-txt, .ubicacion-txt, .contactanos-txt, .redes-txt {
+    text-align: center; /* Centra el texto en pantallas más pequeñas */
+    margin-bottom: 20px; /* Añade espacio entre las secciones */
+  }
+}

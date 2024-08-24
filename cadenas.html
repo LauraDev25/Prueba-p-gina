@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aretes y Cadenas</title>
+    <link rel="stylesheet" href="cadenas.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#" class="logo"></a><img src="IMAGENES/LOGO.jpeg" alt="">
+            </div>
+
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+        </nav>
+        <!-- Icono del carrito de compras -->
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Carrito desplegable -->
+    <div id="cart-popup" class="cart-popup">
+        <h2>Tu Carrito</h2>
+        <ul id="cart-items"></ul>
+        <div class="total">
+            <strong>Total:</strong> $<span id="total-price">0.00</span>
+        </div>
+        <button onclick="clearCart(); vaciarCarritoBoton()">Vaciar Carrito</button>
+    </div>
+
+    <!-- Contenedor de productos -->
+    <div class="titulo1">
+        <h1>Aretes y Cadenas</h1>
+    </div>
+        
+    <main class="product-list">
+        <div class="product">
+            <img src="IMAGENES/ARETES 1.jpg" alt="">
+            <span>Aretes dorados</span>
+            <span>$30.000</span>
+            <button onclick="addToCart('Aretes dorados', 30.000); agregarAlCarrito()">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+            <img src="IMAGENES/ARETES 2.jpg" alt="">
+            <span>Aretes largos plateados </span>
+            <span>$25.000</span>
+            <button onclick="addToCart('Aretes largos plateados', 25.000); agregarAlCarrito()">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+            <img src="IMAGENES/ARETES 3.jpg" alt="">
+            <span> Aretes de perla plateados </span>
+            <span>$40.000</span>
+            <button onclick="addToCart('Aretes de perla plateados', 40.000); agregarAlCarrito()">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+            <img src="IMAGENES/ARETES 4.jpg" alt="">
+            <span>Aretes corbatin con perla</span>
+            <span>$50.000</span>
+            <button onclick="addToCart('Aretes de corbatin con perla', 50.000); agregarAlCarrito()">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+            <img src="IMAGENES/CADENA 1.jpg" alt="">
+            <span>Cadena dorada</span>
+            <span>$30.000</span>
+            <button onclick="addToCart('Cadena dorada', 30.000); agregarAlCarrito()">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+            <img src="IMAGENES/CADENA 2.jpg" alt="">
+            <span>Cadena de mariposas</span>
+            <span>$50.000</span>
+            <button onclick="addToCart('Cadena de mariposas', 50.000); agregarAlCarrito()">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+            <img src="IMAGENES/CADENA 3.jpg" alt="">
+            <span>cadena dorada en forma de hojas</span>
+            <span>$60.000</span>
+            <button onclick="addToCart('Cadena dorada en forma de hojas', 60.000); agregarAlCarrito()">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+            <img src="IMAGENES/CADENA 4.jpg" alt="">
+            <span>Cadena delicada pon pepitas</span>
+            <span>$60.000</span>
+            <button onclick="addToCart('Cadena delicada con pepitas', 60.000); agregarAlCarrito()">Agregar al Carrito</button>
+        </div>
+    </main>
+
+    <br><br><br>
+
+<footer class="footer container">
+  <div class="footer-txt">
+    <img src="IMAGENES/LOGO.jpeg" alt="">
+  </div>
+  <div class="ubicacion-txt">
+    <h1>Ubicaciòn</h1>
+    <br>
+    <h3>Nobsa Boyacà</h3>
+    <br>
+    <p>Calle 8 # 4-48 centro</p>
+    <br>
+    <h3>Nueva sede</h3>
+    <br>
+    <p>Sogamoso Boyacà</p>
+    <br>
+    <p>Calle 9 # 6-58 centro</p>
+  </div>
+  <div class="contactanos-txt">
+    <h1>Contactanos</h1>
+    <br>
+    <h3>Email</h3>
+    <p>tienda@venussaccesorios.com</p>
+    <br>
+    <h3>Telefono</h3>
+    <p>+57 3124567893</p>
+  </div>
+  <div class="redes-txt">
+    <h1>Nuestras Redes Sociales</h1>
+    <br>
+    <h3>Instagram</h3>
+    <p>Venuss_Accesorios</p>
+    <br>
+    <h3>Facebook</h3>
+    <p>Venuss_Accesorios</p>
+  </div>
+
+  <br><br><br><br><br><br>
+
+
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="sweetAlert.js"></script>
+    <script src="cadenas.js"></script>
+</body>
+</html>
